@@ -35,6 +35,12 @@
     color: #57606a;
     font-size: 0.9rem;
 }
+.aksi {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    margin-top: 1rem;
+}
 @media (max-width: 768px) {
     .kepala {
         flex-direction: column;

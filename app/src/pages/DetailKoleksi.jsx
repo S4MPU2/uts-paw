@@ -4,7 +4,8 @@ import useKoleksi from "../hooks/useKoleksi.js";
 
 export default function DetailKoleksi() {
     const { id } = useParams();
-    const { items, loading, error } = useKoleksi();
+    const navigate = useNavigate();
+    const { items, loading, error, hapus } = useKoleksi();
    
     if (loading) return <PesanKoleksi>Memuat data..</PesanKoleksi>
     if (error) return <PesanKoleksi role="alert">Gagal memuat: {error}</PesanKoleksi>
@@ -22,14 +23,29 @@ export default function DetailKoleksi() {
 
     const harga = new Intl.NumberFormat('id-ID').format(item.hargaTiket);
 
+    const konfirmasiHapus = () => {
+        if (window.confirm("Apakah Anda yakin ingin menghapus destinasi ini?")) {
+            hapus(item.id);
+            navigate("/koleksi");
+        }
+    }
     return (
         <section>
             <h1>{item.judul}</h1>
-            <p>Kategori: {item.kategori}</p>
-            <p>Kabupaten: {item.kabupaten}</p>
-            <p>Harga Tiket: {harga}</p>
-            <p>Jam Buka: {item.jamBuka}</p>
-            <Link to="/koleksi">Kembali ke daftar koleksi</Link>
+            <dl>
+                <dt>Kategori</dt>
+                <dd>{item.kategori}</dd>
+                <dt>Kabupaten</dt>
+                <dd>{item.kabupaten}</dd>
+                <dt>Harga Tiket</dt>
+                <dd>{harga}</dd>
+                <dt>Jam Buka</dt>
+                <dd>{item.jamBuka}</dd>
+            </dl>
+            <div className="aksi">
+                <botton type="button" onClick={konfirmasiHapus}>Hapus</botton>
+                <link to= "/koleksi">Kembali ke daftar koleksi</link>
+            </div>
         </section>
     );
 }

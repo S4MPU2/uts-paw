@@ -6,7 +6,7 @@ export default function Tentang() {
             <h1>Tentang</h1>
             <p>Nama : {mahasiswa.nama}</p>
             <p>NIM : {mahasiswa.nim}</p>
-            <p> kelas : {mahasiswa.Kelas}</p>
+            <p> kelas : {mahasiswa.kelas}</p>
             <p> Tema: {mahasiswa.tema}</p>
         </section>
     )
