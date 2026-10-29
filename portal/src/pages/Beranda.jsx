@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom'
 import { Alert, Button, Card, Input, Space, Statistic, Tag } from 'antd'
 import { ArrowRightOutlined, GithubOutlined } from '@ant-design/icons'
 import UTS, { KELAS, NILAI_MAKS, NILAI_RUBRIK, URL_REPO, statusKelas, tanggalWib, temaUntukNim } from '../uts.js'
+import './Beranda.css'
 
 const ALUR = [
   { judul: 'Fork', isi: 'Fork repo induk ke akun GitHub kamu, lalu aktifkan Actions dan Pages.' },
@@ -85,7 +86,7 @@ function WaktuKelas({ kelas }) {
 export default function Beranda() {
   return (
     <>
-      <section className="pahlawan">
+      <section id="hero" className="pahlawan">
         <div>
           <span className="kicker">{UTS.judul} · {UTS.semester}</span>
           <h1>Bangun dan deploy aplikasi React dalam tiga hari.</h1>
@@ -118,7 +119,7 @@ export default function Beranda() {
         </Card>
       </section>
 
-      <ol className="alur">
+      <ol id="alur" className="alur">
         {ALUR.map((a) => (
           <li key={a.judul}>
             <strong>{a.judul}</strong>
@@ -129,7 +130,7 @@ export default function Beranda() {
 
       <div className="dua-kolom">
         <CekTema />
-        <Card title="Yang perlu diketahui" variant="outlined">
+        <Card id="info-penting" title="Yang perlu diketahui" variant="outlined">
           <ul style={{ margin: 0, paddingLeft: 20, lineHeight: 1.75 }}>
             <li>Ujian individu, waktu tiga hari mengikuti jadwal kelasmu. Yang dinilai adalah push terakhir sebelum tenggat kelasmu, dicatat oleh server GitHub.</li>
             <li>Hanya mahasiswa yang terdaftar di kelas RA dan RB yang dinilai. NIM dan nama harus sesuai data kelas.</li>

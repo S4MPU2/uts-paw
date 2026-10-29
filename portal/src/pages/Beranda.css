@@ -1,0 +1,28 @@
+/* ===== 3 ID selector + 3 pseudo ===== */
+
+/* ID #hero + pseudo-element ::after: garis dekoratif di bawah judul */
+#hero h1::after {
+  content: '';
+  display: block;
+  width: 4rem;
+  height: 4px;
+  margin-top: 0.75rem;
+  border-radius: 2px;
+  background: var(--aksen);
+}
+
+/* ID #alur + pseudo-class :hover: kartu langkah terangkat saat disorot */
+#alur li {
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+#alur li:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08);
+}
+
+/* ID #info-penting + pseudo-element ::marker: warna penanda daftar */
+#info-penting li::marker {
+  color: var(--aksen);
+  font-weight: 700;
+}
