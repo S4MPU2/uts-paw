@@ -1,29 +1,12 @@
-import {useState, useEffect} from 'react'
+import { useContext } from 'react'
+import { KoleksiContext } from '../context/koleksiContext.js'
 
 export default function useKoleksi() {
-  const [items, setItems] = useState([])
-  const [loading, setLoading] = useState(true)
+  const context = useContext(KoleksiContext)
 
-  useEffect(() => {
-    async function ambilKoleksi() {
-        try {
-            const response = await fetch('${import.meta.evv.BASE_URL}data/koleksi.json')
-            if (!response.ok) {
-                throw new Error('Data deestinasi gagal dimuat.')
-            
-            }
+  if (!context) {
+    throw new Error('useKoleksi harus dipakai di dalam KoleksiProvider')
+  }
 
-            const data = await response.json()
-            setItems(Array.isArray(data) ? data : [])
-        }catch{
-            setError('Data destinasi gagal dimuat.')
-        }finally{
-            setLoading(false)
-        }
-    }
-
-    ambilKoleksi()
-  }, [])
-
-  return { items, loading }
+  return context
 }
