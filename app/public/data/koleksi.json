@@ -3,7 +3,7 @@
     "id": "1",
     "judul": "Pantai Mutun",
     "kategori": "Alam",
-    "Kabupaten": "Pesawaran",
+    "kabupaten": "Pesawaran",
     "hargaTiket": 12000,
     "jamBuka": "08.00-17.00"
   },
@@ -11,7 +11,7 @@
     "id": "2",
     "judul": "Air Terjun Talang Rabun",
     "kategori": "Alam",
-    "Kabupaten": "Pesawaran",
+    "kabupaten": "Pesawaran",
     "hargaTiket": 15000,
     "jamBuka": "08.00-17.00"
   },
@@ -19,7 +19,7 @@
     "id": "3",
     "judul": "Gunung Pesagi",
     "kategori": "Alam",
-    "Kabupaten": "Lampung Barat",
+    "kabupaten": "Lampung Barat",
     "hargaTiket": 20000,
     "jamBuka": "08.00-18.00"
   },
@@ -27,7 +27,7 @@
     "id": "4",
     "judul": "Pantai Tanjung Setia",
     "kategori": "Alam",
-    "Kabupaten": "Pesisir Barat",
+    "kabupaten": "Pesisir Barat",
     "hargaTiket": 15000,
     "jamBuka": "08.00-18.00"
   },
@@ -35,7 +35,7 @@
     "id": "5",
     "judul": "Pantai Senaya",
     "kategori": "Alam",
-    "Kabupaten": "Kalianda, Lampung Selatan",
+    "kabupaten": "Kalianda, Lampung Selatan",
     "hargaTiket": 35000,
     "jamBuka": "08.00-18.00"
   },
@@ -43,15 +43,15 @@
     "id": "6",
     "judul": "Gunung Betung",
     "kategori": "Alam",
-    "Kabupaten": "Pesawaran",
+    "kabupaten": "Pesawaran",
     "hargaTiket": 25000,
     "jamBuka": "08.00-18.00"
   },
   {
     "id": "7",
-    "judul": "Gunung Rajabasa ",
+    "judul": "Gunung Rajabasa",
     "kategori": "Alam",
-    "Kabupaten": "Lampung Selatan",
+    "kabupaten": "Lampung Selatan",
     "hargaTiket": 20000,
     "jamBuka": "08.00-18.00"
   },
@@ -59,7 +59,7 @@
     "id": "8",
     "judul": "Museum Lampung",
     "kategori": "Budaya",
-    "Kabupaten": "Lampung Selatan",
+    "kabupaten": "Lampung Selatan",
     "hargaTiket": 10000,
     "jamBuka": "09.00-17.00"
   },
@@ -67,7 +67,7 @@
     "id": "9",
     "judul": "Taman Purbakala Pugung Raharjo",
     "kategori": "Budaya",
-    "Kabupaten": " Lampung Timur",
+    "kabupaten": "Lampung Timur",
     "hargaTiket": 10000,
     "jamBuka": "09.00-17.00"
   },
@@ -75,9 +75,8 @@
     "id": "10",
     "judul": "Taman Budaya Uluan Nughik & Islamic Center Tubaba",
     "kategori": "Budaya",
-    "Kabupaten": "Tulang Bawang Barat",
+    "kabupaten": "Tulang Bawang Barat",
     "hargaTiket": 10000,
     "jamBuka": "07.00-17.00"
   }
-
 ]
