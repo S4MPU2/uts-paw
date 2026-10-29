@@ -1,0 +1,75 @@
+/* ID 1: wadah utama */
+#ringkasan {
+  max-width: 640px;
+  margin: 0 auto;
+  padding: 2rem 1.5rem;
+  border: 1px solid #dcdcdc;
+  border-radius: 8px;
+  background: white;
+}
+
+/* ID 2: judul + pseudo-element ::after (garis dekoratif) */
+#judul-halaman {
+  margin: 0 0 0.5rem;
+  font-size: clamp(1.5rem, 4vw, 2rem);
+  line-height: 1.2;
+}
+
+#judul-halaman::after {
+  content: '';
+  display: block;
+  width: 3rem;
+  height: 4px;
+  margin-top: 0.5rem;
+  border-radius: 2px;
+  background: #b42318;
+}
+
+/* ID 3: tema + pseudo-element ::before (penanda kecil) */
+#info-tema {
+  margin: 0 0 1rem;
+  font-size: 0.9rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #57606a;
+}
+
+#info-tema::before {
+  content: '● ';
+  color: #b42318;
+}
+
+/* ID 4: teks status */
+#status-tugas {
+  margin: 0 0 1.5rem;
+  font-size: 1.05rem;
+  line-height: 1.7;
+}
+
+/* ID 5: tautan + pseudo-class :hover dan :focus-visible */
+#tautan-koleksi {
+  display: inline-block;
+  padding: 0.6rem 1.25rem;
+  border-radius: 6px;
+  background: #111;
+  color: white;
+  font-weight: 600;
+  text-decoration: none;
+  transition: background 0.2s;
+}
+
+#tautan-koleksi:hover {
+  background: #b42318;
+}
+
+#tautan-koleksi:focus-visible {
+  outline: 2px solid #111;
+  outline-offset: 3px;
+}
+
+@media (max-width: 480px) {
+  #ringkasan {
+    padding: 1.25rem 1rem;
+  }
+}
