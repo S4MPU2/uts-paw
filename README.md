@@ -6,7 +6,7 @@ Kelas: RA
 Tema: Destinasi Wisata Lampung
 Deployment: https://s4mpu2.github.io/uts-paw/
 
-![Tangkapan layar beranda](Beranda.png)
+![Tangkapan layar beranda](GambarBeranda.png)
 
 ## Fitur
 - Halaman Koleksi= menampilkan data wisata yang ada di lampung lengkap dengan kabupaten. dari masing' tempat wisata dapat di klik untuk melihat detail berupa jam buka dan harga tiket.
